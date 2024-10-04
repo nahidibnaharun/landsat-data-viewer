@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Add a default font */
+}
+
+#map {
+    height: calc(100vh - 150px); /* Adjust map height */
+    width: 100%; /* Full width */
+    margin-top: 10px; /* Margin for spacing */
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure controls are above the map */
+}
+
+.tle-download {
+    position: absolute;
+    bottom: 10px; /* Place it at the bottom of the page */
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure it is above the map */
+}
+
+input, button {
+    margin: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+h3 {
+    margin: 0 0 10px; /* Adjust heading margins */
+}
+
+h4 {
+    margin: 5px 0; /* Adjust subheading margins */
+}
+
+ul {
+    padding-left: 20px; /* Add padding for list items */
+}
+
+li {
+    margin: 5px 0; /* Spacing between list items */
+}

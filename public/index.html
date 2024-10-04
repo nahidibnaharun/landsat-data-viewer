@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landsat Data Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <!-- Include satellite.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/1.6.1/satellite.js"></script>
+</head>
+<body>
+    <div class="controls">
+        <input type="text" id="latitude" placeholder="Latitude" />
+        <input type="text" id="longitude" placeholder="Longitude" />
+        <button id="searchByCoords">Search by Coordinates</button>
+        <button id="getCurrentLocation">Get Current Location</button> <!-- New button -->
+    </div>
+    <div id="map"></div>
+    <div class="tle-download">
+        <h3>Download TLE Data</h3>
+        <div>
+            <h4>Landsat 7</h4>
+            <button id="downloadL7">Download TLE Data</button>
+        </div>
+        <div>
+            <h4>Landsat 8</h4>
+            <button id="downloadL8">Download TLE Data</button>
+        </div>
+        <div>
+            <h4>Landsat 9</h4>
+            <button id="downloadL9">Download TLE Data</button>
+        </div>
+        <div id="satellite-info">
+            <p id="pass-l7">Landsat 7: Waiting for pass data...</p>
+            <p id="pass-l8">Landsat 8: Waiting for pass data...</p>
+            <p id="pass-l9">Landsat 9: Waiting for pass data...</p>
+        </div>
+          
+    </div>
+    <!-- Include your custom app.js file after all libraries -->
+    <script src="app.js"></script>
+</body>
+</html>
